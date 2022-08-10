@@ -1,0 +1,315 @@
+.flex{
+    display: flex;
+   
+  
+
+}
+body{
+ 
+    background-color: #f8f8f8;
+}
+
+.site-background{
+       width: 95%;
+    margin: auto;
+}
+.dashboard{
+    /* margin-top: 70px; */
+    gap: 70px;
+    position: relative;
+}
+.Navigation{
+    width: 20%;
+  
+    position:static;
+
+    /* height: 50px; */
+}
+.entry-field{
+    width: 80%;
+    background-image: url(../images/icons/sassi-badge.png);
+    padding: 30px;
+    height: 300px;
+    /* margin: 100px auto; */
+    /* border-style: solid red 10px; */
+
+}
+.btn{
+    width: 250px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #c5d3f3b2;
+    color: rgb(34, 30, 30);
+    cursor: pointer;
+    font-size: 16px;
+    font-family: monospace;
+    font-weight: 500;
+    transition: all 0.3s 0s linear;
+    border: solid 1px;
+    border-radius: 7px;
+}
+.btn:hover{
+    color: #fff;
+    background-color: #000;
+    border: solid 4px #c5d3f3b2;
+    transform: scale(1.03);
+}
+.createdSuccessfully{
+    text-align: center;
+    display: none;
+}
+.create-product, .create-user{
+    font-size: 16px;
+    font-weight: 800;
+}
+.create-product input, .create-user input{
+    outline: none;
+    width: 300px;
+    padding: 10px 15px;
+    margin-bottom: 5px;
+    border: solid 1px #d1d1d1;
+}
+.price{
+    margin-left: 15px;
+}
+.name{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.category{
+    margin-left: 43px;
+}
+.image, .video, .color-scale{
+    border: none !important
+}
+.upload-btn, .create-user-btn, .update-btn, .update-user-btn{
+    color: #fff;
+    background-color: blue;
+    border: none;
+    /* flood-color: red; */
+    padding: 20px 30px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s 0s ease-in-out;
+    margin: 10px auto;
+}.success{
+    color: green;
+}
+.failed{
+    color: red;
+}
+.reload{
+    border: none;
+    background-color: transparent;
+    color: blue;
+    font-size:17px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.reload:hover{
+    color: red;
+}
+.update-btn, .edit-heading, .update-user-btn, .success, .failed{
+    display: none;
+}
+.upload-btn:hover, .create-user-btn:hover, .update-btn:hover, .update-user-btn:hover{
+    color: blue;
+    background-color: #fff;
+    border: solid 2px blue;
+}
+
+.create-product, .create-user, .products, .users{
+    display: none;
+}
+
+
+/* .placeholder{
+    height: 400px;
+    width: 100%;
+    background-color: red;
+} */
+
+.admin-photo{
+    margin-top: 50px;
+    width: 100px;
+    /* border: solid 1px red; */
+    object-fit: cover;
+    /* overflow: hidden; */
+    /* height: 100px; */
+
+}
+.admin-photo img{
+    width: 100%;
+    border-radius: 50%;
+    height: 100%;
+}
+.admin-image-section{
+    justify-content: flex-end;
+     align-items: center;
+     justify-content:space-between;
+}
+.heading-text{
+font-size: 40px;
+text-align: center;
+font-weight: 700;
+
+}
+.products{
+    width: 100%;
+    /* height: 500px; */
+    gap:20px;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+}
+.each-product{
+    width: 30%;
+    height: 300px;
+    overflow: hidden;
+    border: solid 2px black;
+    box-shadow: 2px 2px 5px 1px blue ;
+
+}
+.product-list-image{
+    width: 96%;
+    margin: auto;
+    height: 130px;
+    overflow: hidden;
+}
+
+.product-list-text{
+ line-height: 0.7cm;
+width: 97%;
+margin: auto;
+}
+.product-list-image img{
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    object-position: center;
+    object-fit: cover;
+
+}
+.name{
+    width: 98%;
+    margin: auto;
+    height: 20px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.editButton, .deleteButton{
+    padding: 10px ;
+    width: 80px;
+    text-align: center;
+    border: solid 5px black;
+    transition: all 0.3s 0s linear;
+    color: white;
+    background-color: #000;
+}
+
+.editButton:hover, .deleteButton:hover{
+    padding: 10px 20px;
+    border: solid 2px black;
+    transition: all 0.3s 0s linear;
+    color: #000;
+    background-color: white;
+}
+
+.description-cut-width{
+    width: 130px;
+    height: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    
+}
+
+.loader{
+    display: none;
+}
+
+
+.users{
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.user-detail{
+    width: 30%;
+    height: 200px;
+    margin: auto;
+    align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    box-shadow: 2px 2px 10px 1px blue ;
+    /* padding: 20px; */
+}
+.detail-width{
+    width: 90%;
+    margin: auto;
+}
+
+.deleteUser, .editUser{
+    padding: 7px ;
+    margin: 0px 2px;
+    margin-top: 10px;
+    width: 70px;
+    text-align: center;
+    border: solid 5px black;
+    transition: all 0.3s 0s linear;
+    color: white;
+    background-color: #000;
+}
+
+.deleteUser:hover, .editUser:hover{
+
+    border: solid 2px black;
+    transition: all 0.3s 0s linear;
+    color: #000;
+    background-color: white;
+}
+
+
+
+
+/* CATALOGUE STYLING */
+.catalogue{
+    width: 96%;
+    margin: auto;
+    /* height: 500px; */
+    gap:20px;
+    flex-wrap: wrap;
+}
+.catalogue-list-image{
+    width: 96%;
+    margin: auto;
+    height: 250px;
+    overflow: hidden;
+}
+
+.catalogue-list-image img{
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    object-position: center;
+    object-fit: contain;
+
+}
+.each-catalogue{
+    width: 30%;
+    height: 500px;
+    overflow: hidden;
+    border: solid 2px black;
+    box-shadow: 2px 2px 5px 1px blue ;
+
+}
+.return_link a {
+color: blue;
+font-weight: 700;
+}
+
+.return_link a:hover{
+    color: red;
+}

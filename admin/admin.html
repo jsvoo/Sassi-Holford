@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="admin.css" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body>
+  <nav class="navigation flex">
+    <div class="logo-section flex">
+      <a href="index.html"> <img src="./images/icons/Screenshot 2022-07-15 211005.png" alt="" /></a>
+    </div>
+    <div class="menu flex">
+      <ul class="flex">
+        <li><a href="">About</a></li>
+        <li class="nav-bridal">
+          <a href="">Bridal</a>
+
+          <div class="mm-bg">
+            <div class="mega-menu flex">
+              <div class="mm-section">
+                <img src="./images/collections.png" alt="" class="mm-image" />
+                <h3 class="mm-text">COLLECTIONS</h3>
+              </div>
+              <div class="mm-section">
+                <img src="./images/virtual consultations.jpg" alt="" class="mm-image" />
+                <h3 class="mm-text">VIRTUAL CONSULTATIONS</h3>
+              </div>
+              <div class="mm-section">
+                <img src="./images/accessories.png" alt="" class="mm-image" />
+                <h3 class="mm-text">ACCESSORIES</h3>
+              </div>
+              <div class="mm-section">
+                <img src="./images/lookbooks.jpg" alt="" class="mm-image" />
+                <h3 class="mm-text">LOOKBOOKS</h3>
+              </div>
+            </div>
+          </div>
+
+        </li>
+        <li><a href="./fashionshop/fashionshop.html">Fashion</a></li>
+        <li><a href="">Appointments</a></li>
+        <li><a href="">Enquiries</a></li>
+        <li class="blog"><a href="">Blog</a>
+
+          <div class="mm-bg">
+            <div class="mega-menu flex">
+              <div class="mm-section">
+                <img src="./images/blog1.png" alt="" class="mm-image" />
+                <h3 class="mm-text">VIEW ALL</h3>
+              </div>
+              <div class="mm-section">
+                <img src="./images/blog2.png" alt="" class="mm-image" />
+                <h3 class="mm-text">ARTICLES</h3>
+              </div>
+              <div class="mm-section">
+                <img src="./images/blog3.png" alt="" class="mm-image" />
+                <h3 class="mm-text">AS SEEN ON</h3>
+              </div>
+              <div class="mm-section">
+                <img src="./images/blog4.jpg" alt="" class="mm-image" />
+                <h3 class="mm-text">EVENTS</h3>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li><a href="">Our Stores</a></li>
+        <li><a href="">Stockists</a></li>
+      </ul>
+    </div>
+
+    <div class="cart-section flex">
+      <a href="./myaccount.html">My Account</a>
+      <div>
+        <img src="./images/search.png" alt="" class="icon" />
+      </div>
+      <div>
+        <a href="./cart/cart.html"><img src="./images/shopping-bag.png" alt="" class="icon" /></a>
+      </div>
+    </div>
+  </nav>
+  <div class="site-background">
+
+    <header class="admin-image-section flex">
+      <h1 class="heading-text">SASSI PRODUCT & PERSONNEL MANAGEMENT DASHBOARD</h1>
+      <div class="admin-photo">
+        <img src="./Passport.jpg" alt="" class="flex" />
+        <div>
+          <h4>Admin VOO</h4>
+          <a href="">Log out</a>
+        </div>
+      </div>
+    </header>
+    <section class="flex dashboard">
+      <section class="Navigation">
+        <div>
+          <button class="btn" id="create_product">Create new Products</button>
+        </div>
+        <div>
+          <button class="btn" id="create_user">Create Users</button>
+        </div>
+        <div>
+          <button class="btn" id="manage_product">Manage Products</button>
+        </div>
+
+        <div><button class="btn" id="manage_user">Manage Users</button></div>
+      </section>
+      <section class="entry-field">
+        <div class="placeholder"></div>
+        <center>
+          <form class="create-product" enctype="multipart/form-data" method="post"
+            action="http://159.65.21.42:9000/create/product">
+            <h2 class="edit-heading">Edit Product Details</h2>
+            <div>
+              <label for="">Product Name</label><input type="text" id="product-name" class="name" name="name" />
+            </div>
+            <div>
+              <label for="">Description</label><input type="text" id="product-description" class="name" name="description" />
+            </div>
+            <div>
+              <label for="">Quantity in Stock</label><input type="text" id="product-quantity" class="name" name="quantity" />
+            </div>
+            <div>
+              <label for="">Product Price</label><input type="text" id="product-price" class="price" name="price" />
+            </div>
+            <div>
+              <label for="">Category</label><input type="text" id="product-category" class="category" name="category" />
+            </div>
+            <div>
+              <label for="">Product image</label><input type="file" id="product-image" class="image" name="image" />
+            </div>
+            <button class="upload-btn">Upload</button>
+           
+          </form>
+          <button class="update-btn" >Update</button>
+
+          <div class="create-user">
+            <div>
+              <label for=""> Name</label><input type="text" class="user_name" />
+            </div>
+            <div>
+              <label for="">Phone Number</label><input type="number" class="user_phone" />
+            </div>
+            <div>
+              <label for="">Email Address</label><input type="email" class="user_email" />
+            </div>
+            <div>
+              <label for="">Password</label><input type="password" class="user_password" />
+            </div>
+            <div class="success">Operation Successful. <button class="reload">Reload</button> page to continue</div>
+            <div class="failed">Operation Failed. Reload page and try again</div>
+            <button class="create-user-btn" type="button">Create User</button>
+             <button class="update-user-btn">Update Details</button>
+          </div>
+        </center>
+
+        <div class="products flex">
+          <div class="loader">
+            Loading products...
+          </div>
+          <!-- <div class="each-product">
+            <div class="product-list-image">
+              <img src="./Passport.jpg" alt="">
+            </div>
+            <p>name</p>
+            <p>description</p>
+            <p>quantity</p>
+            <p>price</p>
+            <p>category</p>
+            <button class="editButton">Edit</button> <button class="deleteButton">Delete</button>
+          </div> -->
+        </div>
+<div class="createdSuccessfully">
+  <h2><span class="created-product-name"> </span> has been created successfully</h2>
+</div>
+
+        <div class="users flex ">
+          <div class="loader">
+            Loading products...
+          </div>
+    
+        
+        </div>
+      </section>
+    </section>
+  </div>
+</body>
+<script src="./jquery-3.6.0.min.js"></script>
+<script src="./admin.js"></script>
+
+</html>
