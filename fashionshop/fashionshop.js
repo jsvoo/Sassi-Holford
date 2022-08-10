@@ -75,7 +75,7 @@ $(document).ready(function(){
           $('.fashion-products-section').append(fashionProducts)
         }
       },
-      error: function () {
+      error: function (error) {
         $(".loader").hide();
         console.log(error);
       },
