@@ -1,5 +1,7 @@
 /* CART PAGE STYLING */
-
+*{
+  overflow-x: hidden;
+}
 .your-bag{
     width: 70%;
   }
@@ -108,7 +110,22 @@
   .new-container-heading{
     border: none;
    }
+  .menu1{
+    padding-top: 0;
+    width: 50%;
+    margin-left: 30px;
+  }
+  .logo-section{
+    margin-right: 20px;
+  }
   
+
+.logo-section img {
+    width: 180px;
+}
+  .cart-section{
+    width: 30%;
+  }
    .plural{
     display: none;
    }
@@ -139,9 +156,7 @@
     font-weight: 700;
     color: #373e40;
   }
-  .further-interest{
-    
-  }
+  
   .continue-shopping{
     padding: 10px;
     border: solid 2px black;
@@ -167,3 +182,121 @@
     background-color: white;
     color: #000;
   }
+
+/* .navigation{
+  display: none;
+} */
+@media(max-width:930px){
+  .navigation1{
+    display: flex;
+  }
+  .stocklist,
+.stores,
+.blog{
+  display: none;
+}
+  .mobile-navigation{
+    display: none;
+  }
+}
+  @media(max-width:700px){
+   /* .flex{
+    flex-direction: column;
+   } */
+
+.enquiries{
+display: none;
+}
+   .contact-us{
+    width: 100%;
+    margin: 20px auto;
+   }
+    .contact-content{
+      width: 100%;
+      display:flex;
+      gap: 10px;
+      justify-content: space-between;
+    
+    }
+    .your-bag{
+      width: 100%;
+      margin: auto;
+      /* justify-content: center; */
+    }
+    .cart-container{
+      width: 85%;
+      margin: auto;
+    }
+
+.all{
+  flex-direction: column;
+}
+
+  }
+  @media(max-width:600px){
+    .about,
+    .nav-bridal,
+    .search,
+    .appointments{
+      display: none;
+    }
+    .logo-section{
+      width: 40%;
+    }
+    .logo-section img{
+      width: 100%
+    }
+    /* .logo-section img{
+      width: 140px;
+    } */
+    .menu1{
+      width:20%;
+      margin-left: 0;
+    }
+    .cart-section{
+      width: 30%;
+      gap: 2px;
+    }
+  }
+  @media(max-width:473px){
+.cart-container h2, .cart-container h3{
+  font-size: 13px;
+}
+.shopping-bag{
+  margin-bottom: 10px;
+
+}
+.new-container{
+ gap:10px;
+ font-size: 12px;
+ font-weight: 500;
+ font-style: normal;
+ width: 98%;
+}
+.apply-btn, .update-cart-btn{
+  /* padding: 10px ; */
+  /* font-size: 10px; */
+  color: white;
+  /* text-align: center; */
+
+  /* font-weight: 400; */
+  cursor: pointer;
+  background-color: #000;
+  border: 2px solid black;
+  transition: all 0.3s 0s linear;
+}
+.product-base{
+  margin-top: 40px;
+  width: 100%;
+  justify-content: space-between;
+}
+}
+
+
+
+/* menu1
+myaccount
+
+myaccount */
+
+

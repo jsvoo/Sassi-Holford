@@ -8,15 +8,16 @@
     rel="stylesheet" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sassi Holford - British Fashion & Wedding Dress Designer | UK</title>
+  <link rel="stylesheet" href="./bootstrap.min.css">
   <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
-  <nav class="navigation flex">
+  <nav class="navigation1 flex">
     <div class="logo-section flex">
       <a href="index.html"> <img src="./images/icons/Screenshot 2022-07-15 211005.png" alt="" /></a>
     </div>
-    <div class="menu flex">
+    <div class="menu1 flex">
       <ul class="flex">
         <li><a href="">About</a></li>
         <li class="nav-bridal">
@@ -86,6 +87,111 @@
       </div>
     </div>
   </nav>
+
+
+  <nav class="mobile-navigation navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <div class="logo-section">
+        <a class="navbar-brand" href="#"><img src="./images/icons/Screenshot 2022-07-15 211005.png" alt=""></a>
+
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Bridal</a>
+            <div class="mm-bg">
+              <div class="mega-menu flex">
+                <div class="mm-section">
+                  <img src="./images/collections.png" alt="" class="mm-image" />
+                  <h3 class="mm-text">COLLECTIONS</h3>
+                </div>
+                <div class="mm-section">
+                  <img src="./images/virtual consultations.jpg" alt="" class="mm-image" />
+                  <h3 class="mm-text">VIRTUAL CONSULTATIONS</h3>
+                </div>
+                <div class="mm-section">
+                  <img src="./images/accessories.png" alt="" class="mm-image" />
+                  <h3 class="mm-text">ACCESSORIES</h3>
+                </div>
+                <div class="mm-section">
+                  <img src="./images/lookbooks.jpg" alt="" class="mm-image" />
+                  <h3 class="mm-text">LOOKBOOKS</h3>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="./fashionshop/fashionshop.html" class="nav-link">Fashion</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Appointments</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Enquiries</a>
+          </li>
+          <li class="nav-item ">
+            <a href="" class="nav-link">Blog</a>
+            <div class="mm-bg">
+              <div class="mega-menu flex">
+                <div class="mm-section">
+                  <img src="./images/blog1.png" alt="" class="mm-image" />
+                  <h3 class="mm-text">VIEW ALL</h3>
+                </div>
+                <div class="mm-section">
+                  <img src="./images/blog2.png" alt="" class="mm-image" />
+                  <h3 class="mm-text">ARTICLES</h3>
+                </div>
+                <div class="mm-section">
+                  <img src="./images/blog3.png" alt="" class="mm-image" />
+                  <h3 class="mm-text">AS SEEN ON</h3>
+                </div>
+                <div class="mm-section">
+                  <img src="./images/blog4.jpg" alt="" class="mm-image" />
+                  <h3 class="mm-text">EVENTS</h3>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Our Stores</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Stockists</a>
+          </li>
+          <!-- <div class="cart-section flex"> -->
+          <li class="nav-item">
+            <a href="./myaccount.html" class="nav-link">My Account</a>
+          </li>
+
+          <li class="nav-item">
+            <div>
+              <a href="" class="nav-link"> Search
+                <img src="./images/search.png" alt="" class="icon" />
+              </a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <div>
+              <a href="./cart/cart.html" class="nav-link">Shopping Bag <img src="./images/shopping-bag.png" alt=""
+                  class="icon" /></a>
+            </div>
+          </li>
+          <!-- </div> -->
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+
   <section class="banner-section">
     <div class="select-section">
       <a href="" class="select-bridal">BRIDAL</a>
@@ -102,9 +208,9 @@
 
     <div class="fashion">
       <div class="fashion-items">
-        <h3>READY-TO_WEAR</h3>
+        <h3>READY-TO-WEAR</h3>
         <p>Women's Fashion</p>
-        <button class="fashion-items-btn">SHOP THE COLLECTION</button>
+        <a href="./fashionshop/fashionshop.html"> <button class="fashion-items-btn">SHOP THE COLLECTION</button></a>
       </div>
     </div>
   </section>
@@ -157,7 +263,7 @@
   </section>
   <section class="new-arrivals">
     <h1 class="na-heading">NEW ARRIVALS</h1>
-    <div class="flex">
+    <div class="flex na-mobile">
       <div class="na-image-container">
         <img src="./images/na1.png" alt="" class="na-image" />
         <a href="" class="row1-link">SILK CHRISTON DRESS</a>
@@ -290,7 +396,7 @@
       <p class="mail">WEBSITE BY GC</p>
 
     </div>
-    <div class="footer-sec footer">
+    <div class="footer-sec2 footer">
       <h5>ABOUT US</h5>
 
       <p class="mail">BRIDAL STOCKISTS</p>
@@ -320,13 +426,13 @@
     <div class="footer-sec footer">
       <div class="socials">
         <h5>FOLLOW SASSI</h5>
-<div class="socials-images">
-  <img src="./images/icons/facebook.png" alt="">
-  <img src="./images/icons/instagram.png" alt="">
-  <img src="./images/icons/icons8-pinterest-48.png" alt="">
-  <img src="./images/icons/twitter (2).png" alt="">
-  <img src="./images/icons/youtube.png" alt="">
-</div>
+        <div class="socials-images">
+          <img src="./images/icons/facebook.png" alt="">
+          <img src="./images/icons/instagram.png" alt="">
+          <img src="./images/icons/icons8-pinterest-48.png" alt="">
+          <img src="./images/icons/twitter (2).png" alt="">
+          <img src="./images/icons/youtube.png" alt="">
+        </div>
       </div>
       <h5>MAILING LIST</h5>
 
@@ -337,7 +443,7 @@
 
 
   </footer>
-  
+
 
 
 
@@ -346,6 +452,7 @@
 
 </body>
 <script src="./jquery-3.6.0.min.js"></script>
+<script src="./bootstrap.bundle.min.js"></script>
 <script src="./index.js"></script>
 
 </html>

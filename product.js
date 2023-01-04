@@ -11,7 +11,7 @@ $.ajax({
 
     $('.product-title').html(product.name)
     $('.product-price').html('£'+product.price)
-    $('.product-description').html(product.description)
+    $('.product-description').html('Description: '+product.description)
     $('.p-image1').attr('src',`http://159.65.21.42:9000${product.image}`)
     $('.p-image2').attr('src',`http://159.65.21.42:9000${product.image}`)
     $('.p-image3').attr('src',`http://159.65.21.42:9000${product.image}`)

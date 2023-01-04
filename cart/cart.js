@@ -2,6 +2,9 @@ $(document).ready(function () {
 let log_in_status = localStorage.getItem('logged-in')
 if(log_in_status!='true'){
 location.href='../myaccount.html'
+$('.viewcart-err').show()
+}else{
+  $('.viewcart-err').hide()
 }
 
 
@@ -81,7 +84,7 @@ function renderCart(x) {
     </div>
 
     <div class="price">
-        <h3>PRICE</h3>
+        
         <P>£${x.price}
         </P>
     </div>

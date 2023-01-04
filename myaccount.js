@@ -1,5 +1,13 @@
 let data;
 
+let log_in_status = localStorage.getItem('logged-in')
+if(log_in_status!='true'){
+$('.viewcart-err').show()
+}else{
+  $('.viewcart-err').hide()
+}
+
+
 $(".signup-btn").click(function () {
   data = {
     name: `${$("#signup_name").val()}`,
@@ -56,6 +64,7 @@ $(".login-btn").click(function () {
     url: "http://159.65.21.42:9000/login",
     success: function (done) {
       $(".processing").hide();
+      $('.viewcart-err').hide()
       localStorage.setItem("logged-in", true);
     //   console.log(done);
     if(done.name !=undefined){
